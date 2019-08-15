@@ -1,20 +1,13 @@
-import React, { Component } from 'react'
-import Main from './Main';
+import React from 'react';
 
-class Single extends Component {
-
+const Single = React.createClass({
   render() {
     return (
-      <div>
-        <Main />
-        <div className="single-photo">
-        I'm single grid
-        </div>
+      <div className="single-photo">
+      I'm the single
       </div>
-    );
+    )
   }
-}
+});
 
 export default Single;
-
-

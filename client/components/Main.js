@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react';
 import { Link } from 'react-router';
 
-class Main extends Component {
-
+const Main = React.createClass({
   render() {
     return (
       <div>
-        <h1><Link to="/">Reduxtagram</Link></h1>
+        <h1>
+          <Link to="/">Reduxstagram</Link>
+        </h1>
+        {React.cloneElement(this.props.children, this.props)}
       </div>
-    );
+    )
   }
-}
+});
 
 export default Main;
-
-

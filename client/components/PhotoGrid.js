@@ -1,21 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-import Main from './Main';
-
-class PhotoGrid extends Component {
-
+const PhotoGrid = React.createClass({
   render() {
     return (
-      <div>
-        <Main />      
-        <div className="photo-grid">
-          I'm the photo-grid
-        </div>
+      <div className="photo-grid">
+      I'm the photo grid
       </div>
-    );
+    )
   }
-}
+});
 
 export default PhotoGrid;
-
-
